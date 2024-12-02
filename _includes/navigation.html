@@ -6,7 +6,7 @@
           <div class="shrink-0">
             <!-- <img class="size-8" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company"> -->
           </div>
-          <div class="hidden lg:block">
+          <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               {% for item in site.data.navigation %}
@@ -23,7 +23,7 @@
           </div>
         </div>
 
-        <div class="-mr-2 flex lg:hidden">
+        <div class="-mr-2 flex md:hidden">
           <!-- Mobile menu button -->
           <button type="button" class="relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" aria-controls="mobile-menu" aria-expanded="false">
             <span class="absolute -inset-0.5"></span>
@@ -42,15 +42,15 @@
     </div>
 
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div class=" lg:hidden" id="mobile-menu">
+    <div class=" md:hidden" id="mobile-menu">
       <div class=" space-y-1 px-2 pb-3 pt-2 sm:px-3 flex flex-col items-center">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
         {% for item in site.data.navigation %}
         <a href="{{ item.link }}" 
             {% if page.url == item.link %} 
-              class="rounded-md bg-gray-900 px-3 py-2 text-3xl font-medium text-white" aria-current="page"
+              class="rounded-md bg-gray-900 px-3 py-2 text-1xl font-medium text-white" aria-current="page"
             {% else %} 
-              class="rounded-md px-3 py-2 text-3xl font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+              class="rounded-md px-3 py-2 text-1xl font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
             {% endif %}>
             {{ item.name }}
           </a>
