@@ -1,0 +1,6 @@
+- project:
+  title: Where's Waldo?
+  description: Do the thing
+  imagePath: ./assets/images/projects/wheres-waldo.png
+  imageAlt: Where's Waldo preview
+  projectURL:
