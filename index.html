@@ -9,12 +9,15 @@ title: Home
     </div>
 
     <div class="p-8 md:min-h-[50svh] bg-black flex flex-col justify-center" id="about">
-        <h1 class="text-5xl text-white text-center mb-14 md:text-5xl">Full Stack Developer</h1>
+        <h1 class="text-5xl text-white text-center mb-14 md:text-6xl">Full Stack Developer</h1>
         <p class="text-2xl text-white text-center md:text-3xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 
     <div class="p-8 md:min-h-[50svh] bg-black" id="projects">
-        <h1 class="text-5xl text-center text-white md:text-7xl mb-14">Project<span class="font-orbitron text-4xl">.build</span></h1>
+        <div class="flex gap-6 justify-center items-center mb-14">
+            <h1 class="text-5xl text-center text-white md:text-6xl">Project<span class="font-orbitron text-4xl">.build</span></h1>
+            <a href="https://github.com/PhilipTimofeyev"><img src="https://skillicons.dev/icons?i=github"></a>
+        </div>
         <div class="grid grid-cols-[auto] gap-20 md:grid-cols-[repeat(auto-fill,minmax(0,400px))]">
             {% for project in site.data.projects %}
                 <div class="flex flex-col gap-5">
