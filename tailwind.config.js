@@ -7,7 +7,12 @@ module.exports = {
     './*.html',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        orbitron: ['"Orbitron"', "sans-serif"],
+        tangerine: ["Tangerine", "sans-serif"]
+      }, 
+    },
   },
   variants: {
     extend: {},
