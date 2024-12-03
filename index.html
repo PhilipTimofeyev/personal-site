@@ -8,22 +8,22 @@ title: Home
         <p class="text-2xl text-white text-center md:text-3xl">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 
-    <div class="p-12 md:min-h-[47svh] bg-black">
+    <div class="p-12 md:min-h-[50svh] bg-black flex flex-col justify-center">
         <h1 class="text-5xl text-white text-center mb-14 md:text-5xl">Full Stack Developer</h1>
         <p class="text-2xl text-white text-center md:text-3xl">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 
-    <div class="p-12 md:min-h-[47svh] bg-black">
+    <div class="p-12 md:min-h-[50svh] bg-black">
         <h1 class="text-5xl text-center text-white lg:text-7xl mb-14">Projects</h1>
         <div class="grid grid-cols-[auto] gap-20 md:grid-cols-[repeat(auto-fill,minmax(0,400px))]">
             {% for project in site.data.projects %}
-            <div class="flex flex-col gap-5">
-                <h3 class="text-white text-2xl text-center">{{ project.title }}</h3>
-                <a href="{{project.projectUrl}}">
-                <img class="object-cover object-top aspect-square rounded-md" src="{{project.imagePath}}" alt="{{project.imageAlt}}">
-                </a>
-                <p class="text-white text-xl text-center">{{ project.description }}</p>
-            </div>
+                <div class="flex flex-col gap-5 hover:scale-105">
+                    <h3 class="text-white text-2xl text-center">{{ project.title }}</h3>
+                    <a href="{{project.projectUrl}}">
+                        <img class="object-cover object-top aspect-square rounded-md" src="{{project.imagePath}}" alt="{{project.imageAlt}}">
+                    </a>
+                    <p class="text-white text-xl text-center">{{ project.description }}</p>
+                </div>
             {% endfor %}
         </div>
     </div>
