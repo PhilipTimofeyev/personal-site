@@ -1,9 +1,9 @@
 - name: Home
   link: /
 - name: About
-  link: /about.html
+  link: /#about
 - name: Projects
-  link: /about.html
+  link: /#projects
 - name: Blog
   link: /blog.html
 - name: Contact
