@@ -4,6 +4,7 @@
   imagePath: ./assets/images/projects/hermes.png
   imageAlt: Where's Waldo preview
   projectURL:
+  skillIcons: ruby,rails,react,javascript,aws
 
 - waldo:
   title: Where's Waldo?
@@ -11,6 +12,7 @@
   imagePath: ./assets/images/projects/wheres-waldo.png
   imageAlt: Where's Waldo preview
   projectURL:
+  skillIcons: ruby,rails,react,javascript,aws
 
 - battleship:
   title: Battleship
@@ -18,6 +20,7 @@
   imagePath: ./assets/images/projects/battleship.png
   imageAlt: Where's Waldo preview
   projectURL:
+  skillIcons: javascript,html,css,jest
 
 - chess:
   title: CLI Chess
@@ -25,3 +28,4 @@
   imagePath: ./assets/images/projects/chess.png
   imageAlt: Where's Waldo preview
   projectURL:
+  skillIcons: ruby

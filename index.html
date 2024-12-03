@@ -18,10 +18,11 @@ title: Home
         <div class="grid grid-cols-[auto] gap-20 md:grid-cols-[repeat(auto-fill,minmax(0,400px))]">
             {% for project in site.data.projects %}
                 <div class="flex flex-col gap-5 hover:scale-105">
-                    <h3 class="text-white text-2xl text-center">{{ project.title }}</h3>
+                    <h3 class="text-white text-2xl text-center tracking-wide"><b>{{ project.title }}</b></h3>
                     <a href="{{project.projectUrl}}">
                         <img class="object-cover object-top aspect-square rounded-md" src="{{project.imagePath}}" alt="{{project.imageAlt}}">
                     </a>
+                    <img src="https://skillicons.dev/icons?i={{project.skillIcons}}" class="max-h-12" />
                     <p class="text-white text-xl text-center">{{ project.description }}</p>
                 </div>
             {% endfor %}
