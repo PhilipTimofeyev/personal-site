@@ -2,7 +2,7 @@
   title: Hermes Messenger
   description: Do the thing
   imagePath: ./assets/images/projects/hermes.png
-  imageAlt: Where's Waldo preview
+  imageAlt: Hermes Messenger Logo
   projectURL:
   skillIcons: ruby,rails,react,javascript,aws
 
@@ -18,7 +18,7 @@
   title: Battleship
   description: Do the thing
   imagePath: ./assets/images/projects/battleship.png
-  imageAlt: Where's Waldo preview
+  imageAlt: Battleship gameplay
   projectURL:
   skillIcons: javascript,html,css,jest
 
@@ -26,6 +26,6 @@
   title: CLI Chess
   description: Do the thing
   imagePath: ./assets/images/projects/chess.png
-  imageAlt: Where's Waldo preview
+  imageAlt: Chessboard
   projectURL:
   skillIcons: ruby

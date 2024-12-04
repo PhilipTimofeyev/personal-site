@@ -2,28 +2,29 @@
 layout: default
 title: Home
 ---
+<!-- bg-gradient-to-r from-blue-500 via-purple-700 to-red-700 -->
 <main class="bg-slate-100">
-    <div class="p-8 md:min-h-[50svh] bg-gradient-to-r from-blue-500 via-purple-700 to-red-700  flex flex-col md:flex-row md:py-40 md:px-24 items-center gap-8 justify-around">
-        <h1 class="text-4xl font-orbitron text-white text-center md:text-8xl md:text-left mb-5 md:w-max">{ Philip | <span class="font-tangerine text-5xl md:text-9xl font-black">Timofeyev </span>}</h1>
-        <p class="text-2xl text-white text-center md:text-right md:text-3xl md:w-5/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="p-8 min-h-[50svh] flex flex-col lg:flex-row lg:py-40 lg:px-24 items-center gap-8 justify-evenly bg-gradient-to-r from-cyan-500 to-blue-700">
+        <h1 class="text-4xl font-orbitron text-white text-center md:text-6xl lg:text-8xl lg:text-left mb-5 lg:w-max">{ Philip | <span class="font-tangerine text-5xl md:text-7xl lg:text-9xl font-black">Timofeyev </span>}</h1>
+        <p class="text-2xl text-white text-center lg:text-right lg:text-3xl lg:w-5/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 
-    <div class="p-8 md:min-h-[50svh] bg-black flex flex-col justify-center" id="about">
-        <h1 class="text-5xl text-white text-center mb-14 md:text-6xl">Full Stack Developer</h1>
-        <p class="text-2xl text-white text-center md:text-3xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="p-8 min-h-[50svh] lg:px-24 bg-black flex flex-col justify-evenly " id="about">
+        <h1 class="text-5xl text-white text-center mb-14 lg:text-6xl">Full Stack Developer</h1>
+        <p class="text-2xl text-white text-center lg:text-3xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 
-    <div class="p-8 md:min-h-[50svh] bg-black" id="projects">
-        <div class="flex gap-6 justify-center items-center mb-14">
-            <h1 class="text-5xl text-center text-white md:text-6xl">Project<span class="font-orbitron text-4xl">.build</span></h1>
+    <div class="p-8 lg:min-h-[50svh] bg-black lg:px-24" id="projects">
+        <div class="flex gap-6 justify-center items-center mb-24">
+            <h1 class="text-5xl text-center text-white lg:text-6xl">Project<span class="font-orbitron text-4xl">.build</span></h1>
             <a href="https://github.com/PhilipTimofeyev"><img src="https://skillicons.dev/icons?i=github"></a>
         </div>
-        <div class="grid grid-cols-[auto] gap-20 md:grid-cols-[repeat(auto-fill,minmax(0,400px))]">
+        <div class="grid grid-cols-[auto] gap-20 lg:grid-cols-[repeat(auto-fill,minmax(250px,350px))] place-content-center">
             {% for project in site.data.projects %}
-                <div class="flex flex-col gap-5">
+                <div class="flex flex-col gap-5 items-center">
                     <a href="{{project.projectUrl}}" class="hover:scale-105">
                         <h3 class="text-white text-2xl text-center tracking-wide mb-5"><b>{{ project.title }}</b></h3>
-                        <img class="object-cover object-top aspect-square rounded-md" src="{{project.imagePath}}" alt="{{project.imageAlt}}">
+                        <img class="object-cover object-top aspect-square rounded-lg bg-[#12434d]" src="{{project.imagePath}}" alt="{{project.imageAlt}}">
                     </a>
                     <img src="https://skillicons.dev/icons?i={{project.skillIcons}}" class="max-h-12" />
                     <p class="text-white text-xl text-center">{{ project.description }}</p>
