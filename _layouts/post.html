@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-
-{{ content }}
+<div class="bg-[#3F7676] min-w-full flex flex-col items-center px-24">
+    <h1 class="text-center text-4xl md:text-5xl font-medium pt-12 text-white">{{ page.title }}</h1>
+    <h3 class="text-center text-4xl md:text-xl pt-4 font-medium text-white ">{{ page.date | date_to_string }} - {{ page.author }}</h3>
+    <h5 class="text-4xl md:text-lg pt-4 font-medium text-white md:w-2/4 ">{{ content }}</h5>
+</div>
