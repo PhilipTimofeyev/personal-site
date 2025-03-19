@@ -2,9 +2,11 @@
 layout: post
 author: Philip
 ---
+<p class="text-3xl">
 Traits are an example of polymorphism in Rust. They allow different types to respond to the same method.
+</p>
 
-
+<div class="w-full">
 <pre>
     <code class="language-rust">
         fn main() {
@@ -41,3 +43,4 @@ Traits are an example of polymorphism in Rust. They allow different types to res
         }
     </code>
 </pre>
+</div>
