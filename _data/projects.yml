@@ -1,6 +1,6 @@
 - hermes:
   title: Hermes Messenger
-  description: Do the thing
+  description: 
   imagePath: ./assets/images/projects/hermes.png
   imageAlt: Hermes Messenger Logo
   projectURL:
@@ -8,7 +8,7 @@
 
 - waldo:
   title: Where's Waldo?
-  description: Do the thing
+  description: 
   imagePath: ./assets/images/projects/wheres-waldo.png
   imageAlt: Where's Waldo preview
   projectURL:
@@ -16,7 +16,7 @@
 
 - battleship:
   title: Battleship
-  description: Do the thing
+  description: 
   imagePath: ./assets/images/projects/battleship.png
   imageAlt: Battleship gameplay
   projectURL:
@@ -24,7 +24,7 @@
 
 - chess:
   title: CLI Chess
-  description: Do the thing
+  description: 
   imagePath: ./assets/images/projects/chess.png
   imageAlt: Chessboard
   projectURL:

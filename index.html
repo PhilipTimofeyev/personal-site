@@ -3,32 +3,20 @@ layout: default
 title: Home
 ---
 <main class="bg-slate-100">
-    <div class="p-8 min-h-[50svh] flex flex-col lg:flex-row lg:py-40 lg:px-24 items-center gap-8 justify-evenly bg-gradient-to-b from-cyan-500  to-black">
-        <h1 class="text-4xl font-orbitron text-white text-center md:text-6xl lg:text-8xl lg:text-left mb-5 lg:w-max">{ Philip | <span class="font-tangerine text-5xl md:text-7xl lg:text-9xl font-black">Timofeyev </span>}</h1>
-        <p class="text-2xl text-white text-center lg:text-right lg:text-3xl lg:w-5/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
 
-    <div class="p-8 min-h-[50svh] lg:px-24 bg-black flex flex-col justify-evenly " id="about">
-        <h1 class="text-4xl text-white text-center mb-14 lg:text-6xl">Full Stack Developer</h1>
-        <p class="text-2xl text-white text-center lg:text-3xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-
-    <div class="p-8 lg:min-h-[50svh] bg-black lg:px-24" id="projects">
-        <div class="flex gap-6 justify-center items-center mb-24">
-            <h1 class="text-5xl text-center text-white lg:text-6xl">Project<span class="font-orbitron text-4xl">.build</span></h1>
-            <a href="https://github.com/PhilipTimofeyev"><img src="https://skillicons.dev/icons?i=github"></a>
-        </div>
-        <div class="grid grid-cols-[repeat(auto-fit,minmax(150px,350px))] gap-20 place-content-center pb-20">
-            {% for project in site.data.projects %}
-                <div class="flex flex-col gap-5 items-center">
-                    <a href="{{project.projectUrl}}" class="hover:scale-105">
-                        <h3 class="text-white text-2xl text-center tracking-wide mb-5"><b>{{ project.title }}</b></h3>
-                        <img class="object-cover object-top aspect-square rounded-lg bg-[#12434d]" src="{{project.imagePath}}" alt="{{project.imageAlt}}">
-                    </a>
-                    <img src="https://skillicons.dev/icons?i={{project.skillIcons}}" class="max-h-12" />
-                    <p class="text-white text-xl text-center">{{ project.description }}</p>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
+    <div class="bg-gradient-to-b from-blue-500 to-black min-w-full flex flex-col items-center grow">
+        <h1 class="text-center text-4xl md:text-5xl font-medium pt-12 text-white">Latest Posts</h1>
+      
+        <ul class="py-12 w-4/5 md:w-2/4">
+          {% for post in site.posts %}
+          <a href="{{ post.url }}" class="text-center hover:scale-105">
+            <li class="flex flex-col items-center m-auto border-solid border-b-2 max-w-fit">
+              <h2 class="my-8 text-white text-2xl md:text-4xl">{{ post.title }}</h2>
+              <h3 class="text-white text-1xl md:text-2xl mb-8">{{ post.excerpt }}</h3>
+            </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    
 </main>
