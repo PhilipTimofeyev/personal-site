@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="scroll-smooth">
+<html class="scroll-smooth h-dvh">
   <head>
     <meta charset="utf-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Orbitron:wght@400..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
   </head>
-  <body class="h-dvh ">
+  <body class="grid min-h-full grid-rows-[auto_1fr_auto]">
     {% include navigation.html %}
-    {{ content }}
+    <main class="min-h-full grow">{{ content }}</main>
     {% include footer.html %}
     <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
   </body>
